@@ -1,7 +1,8 @@
 const buttonHome = document.querySelector("#home")
 const buttonAbout = document.querySelector("#about")
 const buttonPortfolio = document.querySelector("#portfolio")
-const buttonContact = document.querySelector("#contact")
+const buttonContact = document.querySelector("#my-contact")
+
 
 function scrollTo(element) {
     document.querySelector(element).scrollIntoView({ behavior: "smooth"})
@@ -11,7 +12,7 @@ function scrollTo(element) {
 
 document.querySelector("#home").addEventListener("click", function(event) {
     event.preventDefault();
-    scrollTo(".section-1");
+    scrollTo("#section-1");
 
     buttonHome.style.color = "#2793eb"
     buttonAbout.style.color = "#ffffff"
@@ -25,7 +26,7 @@ document.querySelector("#home").addEventListener("click", function(event) {
 
 document.querySelector("#about").addEventListener("click", function(event) {
     event.preventDefault();
-    scrollTo(".section-2");
+    scrollTo("#section-2");
 
     buttonHome.style.color = "#ffffff"
     buttonAbout.style.color = "#2793eb"
@@ -37,7 +38,7 @@ document.querySelector("#about").addEventListener("click", function(event) {
 
 document.querySelector("#portfolio").addEventListener("click", function(event) {
     event.preventDefault();
-    scrollTo(".section-3");
+    scrollTo("#section-3");
 
     buttonHome.style.color = "#ffffff"
     buttonAbout.style.color = "#ffffff"
@@ -47,9 +48,9 @@ document.querySelector("#portfolio").addEventListener("click", function(event) {
 
 
 
-document.querySelector("#contact").addEventListener("click", function(event) {
+document.querySelector("#my-contact").addEventListener("click", function(event) {
     event.preventDefault();
-    scrollTo(".section-4");
+    scrollTo("#section-4");
 
     buttonHome.style.color = "#ffffff"
     buttonAbout.style.color = "#ffffff"
@@ -58,7 +59,9 @@ document.querySelector("#contact").addEventListener("click", function(event) {
 })
 
 
-/*>>>>>>>>>>>>>>>>>TROCA DE PÁGINA PORTFÓLIO<<<<<<<<<<<<<<<<< */
+
+
+/*>>>>>>>>>>>>>>>>>TROCA DE PÁGINA DE PROJETOS<<<<<<<<<<<<<<<<< */
 
 const firstPage = document.querySelector(".div-section-3-1")
 const secondPag = document.querySelector(".div-section-3-2")
@@ -77,11 +80,39 @@ function previous() {
 
 
 
-/*>>>>>>>>>>>>>>>>>ENVIO DE FORMULÁRIO<<<<<<<<<<<<<<<<< */
+/*>>>>>>>>>>>>>>>>>RESET FORM APÓS ENVIO DE FORMULÁRIO<<<<<<<<<<<<<<<<< */
 
-let myInput = document.querySelectorAll(".input-form")
+const inputName = document.querySelector("#input-name")
+const inputMail = document.querySelector("#input-mail")
+const inputTel = document.querySelector("#input-tel")
+const inputMessage = document.querySelector("#input-message")
 
 function toSend() {
-    myInput.value = ""
+    inputName.value = "";
+    inputMail.value = "";
+    inputTel.value = "";
+    inputMessage.value = ""
 }
 
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>ANIMAÇÃO<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach( (entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add("show")
+        } else {
+            entry.target.classList.remove("show")
+        }
+    })
+
+})
+
+const elements = document.querySelectorAll(".hidden")
+
+elements.forEach((element) => myObserver.observe(element))

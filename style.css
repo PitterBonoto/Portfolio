@@ -21,6 +21,7 @@ body {
     align-items: center;
     margin-right: -20%;
     transition: 1.8s ease;
+    z-index: 2;
 }
 
 .div-nav:hover {
@@ -111,7 +112,30 @@ nav {
 
 
 
-.section-1 {
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 1.8s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.8s;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+#section-1 {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -120,35 +144,62 @@ nav {
     margin-left: 5%;
 }
 
-.name {
+
+#name {
     font-size: 80px;
     color: #FFFFFF;
     letter-spacing: 1px;
 }
 
-.span-bonoto {
+#span-bonoto {
     font-size: 76px;
     color: transparent;
     -webkit-text-stroke: 3px #2793eb;
     text-shadow: -1px -1px 100px #2793eb;
+    transition-delay: 200ms;
 }
 
-.profession {
+#profession {
     font-size: 40px;
     color: #FFFFFF;
     font-weight: 400;
+    transition-delay: 100ms;
+}
+
+.div-logo {
+    display: flex;
+    gap: 10px;
+}
+
+.div-logo :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.div-logo :nth-child(3) {
+    transition-delay: 700ms;
+}
+
+.div-logo :nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+.div-logo :nth-child(5) {
+    transition-delay: 1300ms;
+}
+
+.div-logo :nth-child(6) {
+    transition-delay: 1600ms;
 }
 
 .logo {
     height: 75px;
     width: 75px;
-    margin-right: 10px;
     box-shadow: 1px 1px 10px #2793eb;
     border-radius: 8px;
     z-index: -1;
 }
 
-.img-computer {
+#img-computer {
     position: absolute;
     left: 30%;
     top: -28%;
@@ -164,7 +215,9 @@ nav {
 
 
 
-.section-2 {
+
+
+#section-2 {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -172,7 +225,7 @@ nav {
     margin-top: 100px;
 }
 
-.line-top {
+#line-top {
     width: 60%;
     height: 10px;
     background-color: #2793eb;
@@ -197,30 +250,30 @@ nav {
     width: 35%;
 }
 
-.title-quem-sou-eu {
+#title-quem-sou-eu {
     font-size: 28px;
     font-weight: 400;
     color: #2793eb;
 }
 
-.p-quem-sou-eu {
+#p-quem-sou-eu {
     color: #FFFFFF;
     font-size: 15px;
     margin-top: 20px;
 }
 
-.img-pitter {
+#img-pitter {
     width: 300px;
     border-radius: 200px;
     box-shadow: 1px 1px 40px #FFFFFF;
 }
 
-.line-bottom {
+#line-bottom {
     width: 60%;
     height: 10px;
     background-color: #2793eb;
     border-radius: 20px;
-    margin: 0 0 100px -5px;
+    margin-bottom:  100px;
 }
 
 
@@ -228,7 +281,7 @@ nav {
 
 
 
-.section-3 {
+#section-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,6 +333,7 @@ nav {
     gap: 30px;
 }
 
+
 .div-section-3-2 {
     display: flex;
     justify-content: center;
@@ -289,7 +343,7 @@ nav {
 }
 
 
-.project {
+#project {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -300,7 +354,7 @@ nav {
     border-radius: 20px;
 }
 
-.project:hover {
+#project:hover {
     box-shadow: 1px 1px 30px #FFFFFF;
     transition: 1s ease;
 }
@@ -368,7 +422,7 @@ nav {
 
 
 
-.section-4 {
+#section-4 {
     min-height: 100vh;
     display: flex;
     justify-content:space-around;
@@ -383,7 +437,7 @@ nav {
     gap: 20px;
 }
 
-.contact {
+#contact {
     width: 50vw;
     color: #FFFFFF;
     font-size: 25px;
@@ -394,12 +448,12 @@ nav {
 
 }
 
-.contact:hover {
+#contact:hover {
     color: #2793eb;
     font-size: 40px;
 }
 
-.contact:active {
+#contact:active {
     opacity: 0.5;
 }
 
@@ -408,7 +462,7 @@ nav {
     margin-right: 10px;
 }
 
-.my-form {
+#my-form {
     width: 350px;
     height: 500px;
     margin-right: 100px;
@@ -478,3 +532,6 @@ textarea {
 .send:active {
     opacity: 0.4;
 }
+
+
+

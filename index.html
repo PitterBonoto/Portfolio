@@ -13,6 +13,9 @@
 
 </head>
 
+
+
+
 <body>
     <div class="div-nav">
         <div class="div-nav-1"></div>
@@ -20,28 +23,48 @@
             <button class="button-nav" id="home">PRINCIPAL</button>
             <button class="button-nav" id="about">SOBRE</button>
             <button class="button-nav" id="portfolio">PORTFÓLIO</button>
-            <button class="button-nav" id="contact">CONTATO</button>
+            <button class="button-nav" id="my-contact">CONTATO</button>
         </nav>
     </div>
     <p class="arrow"><i class='bx bx-chevrons-left'></i></p>
 
 
 
-    <section class="section-1">
 
-        <h1 class="name">PITTER<span class="span-bonoto">BONOTO</span></h1>
-        <h2 class="profession">Desenvolvedor Front-End</h2>
+
+
+    <section  id="section-1">
+
+        <h1 class="hidden" id="name">PITTER<span class="hidden" id="span-bonoto">BONOTO</span></h1>
+        <h2 class="hidden" id="profession">Desenvolvedor Front-End</h2>
 
         <div class="div-logo">
-            <img class="logo" id="logo-html" src="./assets/logo-html.png" alt="logo-html">
-            <img class="logo" id="logo-css" src="./assets/logo-css.png" alt="logo-css">
-            <img class="logo" id="logo-js" src="./assets/logo-js.png" alt="logo-js">
-            <img class="logo" id="logo-node" src="./assets/logo-node.png" alt="logo-node">
-            <img class="logo" id="logo-git" src="./assets/logo-git.png" alt="logo-git">
-            <img class="logo" id="logo-git-hub" src="./assets/logo-git-hub.png" alt="logo-git-hub">
+            <div class="hidden">
+                <img class="logo" id="logo-html" src="./assets/logo-html.png" alt="logo-html">
+            </div>
+
+            <div  class="hidden">
+                <img class="logo" id="logo-css" src="./assets/logo-css.png" alt="logo-css">
+            </div>
+
+            <div class="hidden">
+                <img class="logo" id="logo-js" src="./assets/logo-js.png" alt="logo-js">
+            </div>
+
+            <div class="hidden">
+                <img class="logo" id="logo-node" src="./assets/logo-node.png" alt="logo-node">
+            </div>
+
+            <div class="hidden">
+                <img class="logo" id="logo-git" src="./assets/logo-git.png" alt="logo-git">
+            </div>
+
+            <div class="hidden">
+                <img class="logo" id="logo-git-hub" src="./assets/logo-git-hub.png" alt="logo-git-hub">
+            </div>
         </div>
 
-        <img class="img-computer" src="./assets/img-web.png" alt="img-computador">
+        <img  id="img-computer" src="./assets/img-web.png" alt="img-computador">
 
     </section>
 
@@ -51,12 +74,12 @@
 
 
 
-    <section class="section-2">
-        <div class="line-top"></div>
+    <section class="hidden" id="section-2">
+        <div class="hidden" id="line-top"></div>
         <div class="div-section-2">
             <div class="div-section-2-1">
-                <h1 class="title-quem-sou-eu">Pitter Bonoto</h1>
-                <p class="p-quem-sou-eu">"Sou um profissional comprometido, dinâmico, cooperativo e útil e sempre
+                <h1 class="hidden" id="title-quem-sou-eu">Pitter Bonoto</h1>
+                <p class="hidden" id="p-quem-sou-eu">"Sou um profissional comprometido, dinâmico, cooperativo e útil e sempre
                     busquei
                     agregar as equipes das
                     quais fiz parte. Atualmente encontro-me em transição para uma carreira no setor de
@@ -70,9 +93,9 @@
                     atividades no segmento de Elétrica Industrial."</p>
             </div>
 
-            <img class="img-pitter" src="./assets/Pitter-profissional sem fundo.png" alt="foto-pitter">
+            <img class="hidden" id="img-pitter" src="./assets/Pitter-profissional sem fundo.png" alt="foto-pitter">
         </div>
-        <div class="line-bottom"></div>
+        <div class="hidden" id="line-bottom"></div>
     </section>
 
 
@@ -82,7 +105,7 @@
 
 
 
-    <section class="section-3">
+    <section id="section-3">
         <h1 class="title-section-3">[ <span class="span-title-section-3">Projetos</span> ]</h1>
         <div class="nav-project">
             <button class="button-project" id="previous" onclick="previous()"><i class='bx bx-chevron-left'></i>
@@ -91,7 +114,7 @@
                     class='bx bx-chevron-right'></i></button>
         </div>
         <div class="div-section-3-1">
-            <div class="project">
+            <div class="hidden" id="project">
                 <img class="img-project" src="./assets/moeda.gif" alt="moeda">
                 <h1 class="title-project">Conversor de Moedas</h1>
                 <div class="line-project"></div>
@@ -108,7 +131,7 @@
                     Acesse o site</a>
             </div>
 
-            <div class="project">
+            <div class="hidden" id="project">
                 <img class="img-project" src="./assets/logo the big bang.png" alt="logo-the-big-bang">
                 <h1 class="title-project">Pedra, Papel, Tesoura, Lagarto e Spock</h1>
                 <div class="line-project"></div>
@@ -125,7 +148,7 @@
                     Acesse o site</a>
             </div>
 
-            <div class="project">
+            <div class="hidden" id="project">
                 <img class="img-project" src="./assets/hamburgueria-node-readme.gif" alt="gif-api-pedidos">
                 <h1 class="title-project">Pedidos Hamburgueria</h1>
                 <div class="line-project"></div>
@@ -142,7 +165,7 @@
                     Acesse o site</a>
             </div>
 
-            <div class="project">
+            <div class="hidden" id="project">
                 <img class="img-project" src="./assets/dev-sorteio.gif" alt="logo-dev-sorteio">
                 <h1 class="title-project">Sorteador</h1>
                 <div class="line-project"></div>
@@ -159,7 +182,7 @@
                     Acesse o site</a>
             </div>
 
-            <div class="project">
+            <div class="hidden" id="project">
                 <img class="img-project" src="./assets/burguer.gif" alt="moeda">
                 <h1 class="title-project">Cardápio Hamburgueria</h1>
                 <div class="line-project"></div>
@@ -180,7 +203,7 @@
 
 
         <div class="div-section-3-2">
-            <div class="project">
+            <div class="hidden" id="project">
                 <img class="img-project" src="./assets/mario.png" alt="mario-e-luigi">
                 <h1 class="title-project">Serviço de Encanador Mario</h1>
                 <div class="line-project"></div>
@@ -197,7 +220,7 @@
                     Acesse o site</a>
             </div>
 
-            <div class="project">
+            <div class="hidden" id="project">
                 <img class="img-project" src="./assets/calculator.png" alt="calculadora">
                 <h1 class="title-project">Calculadora</h1>
                 <div class="line-project"></div>
@@ -225,55 +248,49 @@
 
 
 
-
-
-
-
-
-
-    <section class="section-4">
+    <section id="section-4">
 
         <div class="div-contact">
-            <a class="contact" href="https://wa.me/5531988506657" target="_blank">
+            <a class="hidden" id="contact" href="https://wa.me/5531988506657" target="_blank">
                 <img class="icon" src="./assets/icon-whatsapp.png" alt="icon-whatsapp">(31) 98850 6657
             </a>
 
-            <a class="contact" href="https://www.linkedin.com/in/pitter-bonoto/" target="_blank">
+            <a class="hidden" id="contact" href="https://www.linkedin.com/in/pitter-bonoto/" target="_blank">
                 <img class="icon" src="./assets/icon-linkedin.png"
                     alt="icon-linkedin">www.linkedin.com/in/pitter-bonoto/
             </a>
 
-            <a class="contact" href="https://github.com/PitterBonoto" target="_blank">
+            <a class="hidden" id="contact" href="https://github.com/PitterBonoto" target="_blank">
                 <img class="icon" src="./assets/icon-github.png" alt="icon-whatsapp">github.com/PitterBonoto
             </a>
 
-            <a class="contact" href="mailto:bonotopitter@gmail.com" target="_blank">
+            <a class="hidden" id="contact" href="mailto:bonotopitter@gmail.com" target="_blank">
                 <img class="icon" src="./assets/icon-gmail.png" alt="icon-gmail">bonotopitter@gmail.com
             </a>
 
-            <a class="contact" href="https://www.instagram.com/pitterbonoto/" target="_blank">
+            <a class="hidden" id="contact" href="https://www.instagram.com/pitterbonoto/" target="_blank">
                 <img class="icon" src="./assets/icon-instagram.png" alt="icon-instagram">@pitterbonoto
             </a>
         </div>
 
 
-        <form class="my-form" action="https://formsubmit.co/pitterbonoto@gmail.com" method="POST" target="_blank" >
+        <form class="hidden" id="my-form" action="https://formsubmit.co/pitterbonoto@gmail.com" method="POST" target="_blank">
             <h1 class="title-form">Deixe seu recado.</h1>
 
             <label>Nome:
-                <input class="input-form" id="form-name" type="text" name="nome">
+                <input class="input-form" id="input-name" type="text" name="nome">
             </label>
 
             <label>Email:
-                <input class="input-form" id="form-email" type="email" name="email">
+                <input class="input-form" id="input-mail" type="email" name="email">
             </label>
 
             <label>Telefone:
-                <input class="input-form" id="form-tel" type="tel" name="telefone">
+                <input class="input-form" id="input-tel" type="tel" name="telefone">
             </label>
 
             <label>Mensagem:
-                <textarea class="input-form" id="form-info" name="info"></textarea>
+                <textarea class="input-form" id="input-message" name="info"></textarea>
             </label>
 
             <button class="send" onclick="toSend()">Enviar</button>
