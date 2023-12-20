@@ -5,12 +5,12 @@ const buttonContact = document.querySelector("#my-contact")
 
 
 function scrollTo(element) {
-    document.querySelector(element).scrollIntoView({ behavior: "smooth"})
+    document.querySelector(element).scrollIntoView({ behavior: "smooth" })
 }
 
 
 
-document.querySelector("#home").addEventListener("click", function(event) {
+document.querySelector("#home").addEventListener("click", function (event) {
     event.preventDefault();
     scrollTo("#section-1");
 
@@ -24,7 +24,7 @@ document.querySelector("#home").addEventListener("click", function(event) {
 
 
 
-document.querySelector("#about").addEventListener("click", function(event) {
+document.querySelector("#about").addEventListener("click", function (event) {
     event.preventDefault();
     scrollTo("#section-2");
 
@@ -36,7 +36,7 @@ document.querySelector("#about").addEventListener("click", function(event) {
 
 
 
-document.querySelector("#portfolio").addEventListener("click", function(event) {
+document.querySelector("#portfolio").addEventListener("click", function (event) {
     event.preventDefault();
     scrollTo("#section-3");
 
@@ -48,7 +48,7 @@ document.querySelector("#portfolio").addEventListener("click", function(event) {
 
 
 
-document.querySelector("#my-contact").addEventListener("click", function(event) {
+document.querySelector("#my-contact").addEventListener("click", function (event) {
     event.preventDefault();
     scrollTo("#section-4");
 
@@ -82,18 +82,21 @@ function previous() {
 
 /*>>>>>>>>>>>>>>>>>RESET FORM APÓS ENVIO DE FORMULÁRIO<<<<<<<<<<<<<<<<< */
 
+
 const inputName = document.querySelector("#input-name")
 const inputMail = document.querySelector("#input-mail")
 const inputTel = document.querySelector("#input-tel")
 const inputMessage = document.querySelector("#input-message")
 
 function toSend() {
-    inputName.value = "";
-    inputMail.value = "";
-    inputTel.value = "";
-    inputMessage.value = ""
-}
+    setTimeout(() => {
+        inputName.value = "";
+        inputMail.value = "";
+        inputTel.value = "";
+        inputMessage.value = ""
+    }, 500);
 
+}
 
 
 
@@ -103,8 +106,8 @@ function toSend() {
 
 
 const myObserver = new IntersectionObserver((entries) => {
-    entries.forEach( (entry) => {
-        if(entry.isIntersecting) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
             entry.target.classList.add("show")
         } else {
             entry.target.classList.remove("show")
