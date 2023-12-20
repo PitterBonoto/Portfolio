@@ -20,14 +20,14 @@ body {
     display: flex;
     align-items: center;
     margin-right: -20%;
-    transition: 1.8s ease;
+    transition: 1.4s ease;
     z-index: 2;
 }
 
 .div-nav:hover {
     margin-right: 0;
     box-shadow: 1px 1px 100px #FFFFFF;
-    transition: 1.8s ease;
+    transition: 1.4s ease;
 }
 
 .arrow {
@@ -37,9 +37,11 @@ body {
     opacity: 0;
     color: #FFFFFF;
     font-size: 50px;
-    animation: animate 1.5s linear infinite;
+    animation: animate 0.5s linear infinite;
     z-index: -1;
+    cursor: pointer;
 }
+
 
 
 @keyframes animate {
@@ -115,7 +117,7 @@ nav {
 
 .hidden {
     opacity: 0;
-    filter: blur(10px);
+    filter: blur(15px);
     transition: all 1s;
     transform: translateX(-100%);
 }
@@ -156,14 +158,14 @@ nav {
     color: transparent;
     -webkit-text-stroke: 3px #2793eb;
     text-shadow: -1px -1px 100px #2793eb;
-    transition-delay: 200ms;
+    transition-delay: 400ms;
 }
 
 #profession {
     font-size: 40px;
     color: #FFFFFF;
     font-weight: 400;
-    transition-delay: 100ms;
+    transition-delay: 50ms;
 }
 
 .div-logo {
@@ -172,23 +174,23 @@ nav {
 }
 
 .div-logo :nth-child(2) {
-    transition-delay: 400ms;
+    transition-delay: 200ms;
 }
 
 .div-logo :nth-child(3) {
-    transition-delay: 700ms;
+    transition-delay: 400ms;
 }
 
 .div-logo :nth-child(4) {
-    transition-delay: 1000ms;
+    transition-delay: 600ms;
 }
 
 .div-logo :nth-child(5) {
-    transition-delay: 1300ms;
+    transition-delay: 800ms;
 }
 
 .div-logo :nth-child(6) {
-    transition-delay: 1600ms;
+    transition-delay: 1000ms;
 }
 
 .logo {

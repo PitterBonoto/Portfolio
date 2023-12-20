@@ -90,11 +90,8 @@ const inputMessage = document.querySelector("#input-message")
 
 function toSend() {
     setTimeout(() => {
-        inputName.value = "";
-        inputMail.value = "";
-        inputTel.value = "";
-        inputMessage.value = ""
-    }, 500);
+        console.log("teste")
+    }, 4000);
 
 }
 
