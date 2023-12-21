@@ -1,3 +1,6 @@
+
+/*>>>>>>>>>>>>>>>>>>>>>>NAVEGAÇÃO<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
 const buttonHome = document.querySelector("#home")
 const buttonAbout = document.querySelector("#about")
 const buttonPortfolio = document.querySelector("#portfolio")
@@ -9,7 +12,6 @@ function scrollTo(element) {
 }
 
 
-
 document.querySelector("#home").addEventListener("click", function (event) {
     event.preventDefault();
     scrollTo("#section-1");
@@ -18,11 +20,7 @@ document.querySelector("#home").addEventListener("click", function (event) {
     buttonAbout.style.color = "#ffffff"
     buttonPortfolio.style.color = "#ffffff"
     buttonContact.style.color = "#ffffff"
-
-
 })
-
-
 
 document.querySelector("#about").addEventListener("click", function (event) {
     event.preventDefault();
@@ -34,8 +32,6 @@ document.querySelector("#about").addEventListener("click", function (event) {
     buttonContact.style.color = "#ffffff"
 })
 
-
-
 document.querySelector("#portfolio").addEventListener("click", function (event) {
     event.preventDefault();
     scrollTo("#section-3");
@@ -45,8 +41,6 @@ document.querySelector("#portfolio").addEventListener("click", function (event) 
     buttonPortfolio.style.color = "#2793eb"
     buttonContact.style.color = "#ffffff"
 })
-
-
 
 document.querySelector("#my-contact").addEventListener("click", function (event) {
     event.preventDefault();
@@ -82,7 +76,6 @@ function previous() {
 
 /*>>>>>>>>>>>>>>>>>RESET FORM APÓS ENVIO DE FORMULÁRIO<<<<<<<<<<<<<<<<< */
 
-
 const inputName = document.querySelector("#input-name")
 const inputMail = document.querySelector("#input-mail")
 const inputTel = document.querySelector("#input-tel")
@@ -100,8 +93,6 @@ function toSend() {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>ANIMAÇÃO<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-
-
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -116,3 +107,25 @@ const myObserver = new IntersectionObserver((entries) => {
 const elements = document.querySelectorAll(".hidden")
 
 elements.forEach((element) => myObserver.observe(element))
+
+
+
+
+
+const myObserver1 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show-1")
+        } else {
+            entry.target.classList.remove("show-1")
+        }
+    })
+
+})
+
+const elements1 = document.querySelectorAll(".hidden-1")
+
+elements1.forEach((element) => myObserver1.observe(element))
+
+
+

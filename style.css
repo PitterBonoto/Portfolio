@@ -13,6 +13,7 @@ body {
 }
 
 
+/*>>>>>>>>>>>>>>>>>>>>>>>NAVEGAÇÃO<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .div-nav {
     position: fixed;
@@ -37,12 +38,10 @@ body {
     opacity: 0;
     color: #FFFFFF;
     font-size: 50px;
-    animation: animate 0.5s linear infinite;
+    animation: animate 1.5s linear infinite;
     z-index: -1;
     cursor: pointer;
 }
-
-
 
 @keyframes animate {
     0% {
@@ -58,7 +57,6 @@ body {
     }
 }
 
-
 .div-nav-1 {
     width: 20px;
     height: 100vh;
@@ -67,7 +65,6 @@ body {
     background-repeat: no-repeat;
     cursor: pointer;
 }
-
 
 nav {
     width: 20vw;
@@ -111,18 +108,29 @@ nav {
 
 
 
-
-
-
+/*>>>>>>>>>>>>>>>>>>>>>>>ANIMAÇÃO<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;   
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+}
+
+
+.hidden-1 {
     opacity: 0;
     filter: blur(15px);
     transition: all 1s;
     transform: translateX(-100%);
 }
 
-.show {
+.show-1 {
     opacity: 1;
     filter: blur(0);
     transition: all 1s;
@@ -132,10 +140,7 @@ nav {
 
 
 
-
-
-
-
+/*>>>>>>>>>>>>>>>>>>>>>>>SECTION 1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 #section-1 {
     min-height: 100vh;
@@ -145,7 +150,6 @@ nav {
     gap: 28px;
     margin-left: 5%;
 }
-
 
 #name {
     font-size: 80px;
@@ -203,21 +207,17 @@ nav {
 
 #img-computer {
     position: absolute;
-    left: 30%;
-    top: -28%;
+    right: 4%;
+    top: -20%;
     height: 130%;
     z-index: -1;
-    opacity: 0.08;
+    opacity: 0.1;    
 }
 
 
 
 
-
-
-
-
-
+/*>>>>>>>>>>>>>>>>>>>>>>>SECTION 2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 #section-2 {
     min-height: 100vh;
@@ -281,7 +281,7 @@ nav {
 
 
 
-
+/*>>>>>>>>>>>>>>>>>>>>>>>SECTION 3<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 #section-3 {
     display: flex;
@@ -315,8 +315,12 @@ nav {
     transition: 1s ease;
 }
 
+.button-project:active {
+    opacity: 0.3;
+}
 
-.title-section-3 {
+
+#title-section-3 {
     color: #2793eb;
     font-size: 50px;
     text-align: center;
@@ -332,18 +336,40 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
+.div-section-3-1 :nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.div-section-3-1 :nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.div-section-3-1 :nth-child(4) {
+    transition-delay: 600ms;
+}
 
 .div-section-3-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     display: none;
 }
 
+.div-section-3-2 :nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.div-section-3-2 :nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.div-section-3-2 :nth-child(4) {
+    transition-delay: 600ms;
+}
 
 #project {
     display: flex;
@@ -374,7 +400,6 @@ nav {
     line-height: 28px;
     height: 50px;
     font-size: 20px;
-
 }
 
 .line-project {
@@ -421,8 +446,7 @@ nav {
 
 
 
-
-
+/*>>>>>>>>>>>>>>>>>>>>>>>SECTION 4<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 #section-4 {
     min-height: 100vh;
@@ -447,7 +471,6 @@ nav {
     display: flex;
     align-items: center;
     transition: 0.3s ease;
-
 }
 
 #contact:hover {
@@ -534,6 +557,3 @@ textarea {
 .send:active {
     opacity: 0.4;
 }
-
-
-
