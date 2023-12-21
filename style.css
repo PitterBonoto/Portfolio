@@ -113,7 +113,7 @@ nav {
 .hidden {
     opacity: 0;
     filter: blur(15px);
-    transition: all 1s;   
+    transition: all 1s;
 }
 
 .show {
@@ -174,7 +174,7 @@ nav {
 
 .div-logo {
     display: flex;
-    gap: 10px;
+    gap: 1%;
 }
 
 .div-logo :nth-child(2) {
@@ -211,7 +211,7 @@ nav {
     top: -20%;
     height: 130%;
     z-index: -1;
-    opacity: 0.1;    
+    opacity: 0.1;
 }
 
 
@@ -275,7 +275,7 @@ nav {
     height: 10px;
     background-color: #2793eb;
     border-radius: 20px;
-    margin-bottom:  100px;
+    margin-bottom: 100px;
 }
 
 
@@ -394,6 +394,13 @@ nav {
     border-radius: 10px;
 }
 
+.text-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title-project {
     color: #FFFFFF;
     text-align: center;
@@ -421,12 +428,13 @@ nav {
 
 .tecnology-project {
     display: flex;
+    justify-content: center;
     gap: 5px;
-    margin: 20px 0;
+    margin: 10% 0;
 }
 
 .p-tecnology-project {
-    width: 60px;
+    width: 30%;
     height: 20px;
     border-radius: 5px;
 }
@@ -451,7 +459,7 @@ nav {
 #section-4 {
     min-height: 100vh;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     margin-top: 200px;
 }
@@ -556,4 +564,221 @@ textarea {
 
 .send:active {
     opacity: 0.4;
+}
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>RESPONSIVIDADE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media screen and (max-width: 1200px) {
+
+/*----------------NAVEGAÇÃO-----------------*/
+
+    .div-nav {
+        margin: -150px 0 0 0;
+        top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .div-nav:hover {
+        margin: 0;
+    }
+
+    .div-nav-1 {
+        width: 100vw;
+        height: 20px;
+        background-image: url(./assets/fundo-aba-2.jpg);
+        background-size: 100vw 3.5vh;
+    }
+
+    nav {
+        width: 100vw;
+        height: 150px;
+        background-size: cover;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .button-nav {
+        background-size: 100vw 15vh;
+        width: 20%;
+        font-size: 15px;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+
+    .arrow {
+        top: 1%;
+        right: 43%;
+        transform: rotate(-90deg);
+    }
+
+
+
+/*----------------SECTION 1-----------------*/
+
+    #name {
+        font-size: 50px;
+    }
+
+    #profession {
+        font-size: 28px;
+    }
+
+    #span-bonoto {
+        font-size: 48px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #img-computer {
+        height: 45vh;
+        top: 0;
+        right: 0;
+    }
+
+
+
+/*----------------SECTION 2-----------------*/
+
+    #line-top {
+        margin-top: 20%;
+    }
+
+    .div-section-2 {
+        margin-left: 0;
+        flex-direction: column-reverse;
+    }
+
+    .div-section-2-1 {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    #img-pitter {
+        width: 60%;
+        margin: 10% 0;
+    }
+
+
+/*----------------SECTION 3-----------------*/
+
+    #title-section-3 {
+        font-size: 35px;
+    }
+
+    .span-title-section-3 {
+        font-size: 25px;
+    }
+
+    .button-project {
+        width: 80px;
+        font-size: 15px;
+    }
+
+    .div-section-3-1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .div-section-3-2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #project {
+        flex-direction: row;
+        width: 360px;
+        height: 120px;
+    }
+
+    .img-project {
+        width: 25%;
+        height: 90px;
+        margin: 0;
+    }
+
+    .text-project {
+        width: 60%;
+        height: 150px;
+    }
+
+    .title-project {
+        font-size: 15px;
+        height: 30px;
+        line-height: 20px;
+    }
+
+    .p-project {
+        display: none;
+    }
+
+    .tecnology-project {
+        margin: 5px 0;
+    }
+
+
+
+/*----------------SECTION 4-----------------*/
+
+    #section-4 {
+        margin-top: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+    }
+
+    #my-form {
+        width: 70%;
+        height: 300px;
+        margin: 0;
+    }
+
+    .title-form {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        height: 25px;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .send {
+        height: 30px;
+        font-size: 17px;
+    }
+
+    .div-contact {
+        gap: 15px;
+    }
+
+    #contact {
+        width: 70vw;
+        font-size: 15px;
+    }
+
+    #contact:hover {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 30px;
+        margin: 0 10px 0 0;
+    }
 }
