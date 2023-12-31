@@ -1,60 +1,3 @@
-
-/*>>>>>>>>>>>>>>>>>>>>>>NAVEGAÇÃO<<<<<<<<<<<<<<<<<<<<<<<<<<< */
-
-const buttonHome = document.querySelector("#home")
-const buttonAbout = document.querySelector("#about")
-const buttonPortfolio = document.querySelector("#portfolio")
-const buttonContact = document.querySelector("#my-contact")
-
-
-function scrollTo(element) {
-    document.querySelector(element).scrollIntoView({ behavior: "smooth" })
-}
-
-
-document.querySelector("#home").addEventListener("click", function (event) {
-    event.preventDefault();
-    scrollTo("#section-1");
-
-    buttonHome.style.color = "#2793eb"
-    buttonAbout.style.color = "#ffffff"
-    buttonPortfolio.style.color = "#ffffff"
-    buttonContact.style.color = "#ffffff"
-})
-
-document.querySelector("#about").addEventListener("click", function (event) {
-    event.preventDefault();
-    scrollTo("#section-2");
-
-    buttonHome.style.color = "#ffffff"
-    buttonAbout.style.color = "#2793eb"
-    buttonPortfolio.style.color = "#ffffff"
-    buttonContact.style.color = "#ffffff"
-})
-
-document.querySelector("#portfolio").addEventListener("click", function (event) {
-    event.preventDefault();
-    scrollTo("#section-3");
-
-    buttonHome.style.color = "#ffffff"
-    buttonAbout.style.color = "#ffffff"
-    buttonPortfolio.style.color = "#2793eb"
-    buttonContact.style.color = "#ffffff"
-})
-
-document.querySelector("#my-contact").addEventListener("click", function (event) {
-    event.preventDefault();
-    scrollTo("#section-4");
-
-    buttonHome.style.color = "#ffffff"
-    buttonAbout.style.color = "#ffffff"
-    buttonPortfolio.style.color = "#ffffff"
-    buttonContact.style.color = "#2793eb"
-})
-
-
-
-
 /*>>>>>>>>>>>>>>>>>TROCA DE PÁGINA DE PROJETOS<<<<<<<<<<<<<<<<< */
 
 const firstPage = document.querySelector(".div-section-3-1")
@@ -126,6 +69,7 @@ const myObserver1 = new IntersectionObserver((entries) => {
 const elements1 = document.querySelectorAll(".hidden-1")
 
 elements1.forEach((element) => myObserver1.observe(element))
+
 
 
 

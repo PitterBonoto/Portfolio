@@ -15,16 +15,17 @@
 
 
 <body>
-    <div class="div-nav">
-        <div class="div-nav-1"></div>
-        <nav>
-            <button class="button-nav" id="home">PRINCIPAL</button>
-            <button class="button-nav" id="about">SOBRE</button>
-            <button class="button-nav" id="portfolio">PORTFÓLIO</button>
-            <button class="button-nav" id="my-contact">CONTATO</button>
-        </nav>
-    </div>
-    <p class="arrow"><i class='bx bx-chevrons-left'></i></p>
+    <nav>
+        <div class="nav-itens">
+            <a href="#section-1" class="link-nav" id="home">PRINCIPAL</a>
+            <a href="#section-2" class="link-nav" id="about">SOBRE</a>
+            <a href="#section-3" class="link-nav" id="portfolio">PORTFÓLIO</a>
+            <a href="#section-4" class="link-nav" id="my-contact">CONTATO</a>
+        </div>
+        <p class="arrow"><i class='bx bx-chevrons-down'></i></p>
+    </nav>
+
+
 
 
 
@@ -35,28 +36,65 @@
         <h2 class="hidden" id="profession">Desenvolvedor Front-End</h2>
 
         <div class="div-logo">
-            <div class="hidden-1">
+
+            <div class="hidden-1" id="div-logo-html">
                 <img class="logo" id="logo-html" src="./assets/logo-html.png" alt="logo-html">
+                <div class="hidden" id="text-logo">
+                    <h1 class="title-logo">HTML</h1>
+                    <p><i>HYPER TEXT MARKUP LANGUAGE</i> - Linguagem de Marcação de Hipertexto.
+                        <br><br> Responsável pela estrutura da página, por meio de TAG's fala o que é o quê em um site.
+                    </p>
+                </div>
             </div>
 
-            <div class="hidden-1">
+            <div class="hidden-1" id="div-logo-css">
                 <img class="logo" id="logo-css" src="./assets/logo-css.png" alt="logo-css">
+                <div class="hidden" id="text-logo">
+                    <h1 class="title-logo">CSS</h1>
+                    <p><i>CASCADING STYLE SHEET</i> - Folha de Estilo em Cascatas.
+                        <br><br> Responsável pela estilização de componentes escritos em linguagem de marcação.
+                    </p>
+                </div>
             </div>
 
-            <div class="hidden-1">
+            <div class="hidden-1" id="div-logo-js">
                 <img class="logo" id="logo-js" src="./assets/logo-js.png" alt="logo-js">
+                <div class="hidden" id="text-logo">
+                    <h1 class="title-logo">JAVASCRIPT</h1>
+                    <p>É uma linguagem de programação responsável pela interatividade do site.
+                        <br><br>Com o JavaScript os navegadores passaram a possibilitar interações do usuário.
+                    </p>
+                </div>
             </div>
 
-            <div class="hidden-1">
+            <div class="hidden-1" id="div-logo-node">
                 <img class="logo" id="logo-node" src="./assets/logo-node.png" alt="logo-node">
+                <div class="hidden" id="text-logo">
+                    <h1 class="title-logo">NODE.JS</h1>
+                    <p><i>JS RUNTIME ENVIROMENT</i> - Ambiente de Execução JavaScript.
+                        <br><br>É uma plataforma que permite executar JavaScript do lado do servidor.
+                    </p>
+                </div>
             </div>
 
-            <div class="hidden-1">
+            <div class="hidden-1" id="div-logo-git">
                 <img class="logo" id="logo-git" src="./assets/logo-git.png" alt="logo-git">
+                <div class="hidden" id="text-logo">
+                    <h1 class="title-logo">GIT</h1>
+                    <p>É um sistema de controle de versão de códigos.
+                        <br><br> Permite que várias pessoas trabalhem em um programa ao mesmo tempo por meio de
+                        ramificações de modo a manter a ordem e integração de todas as partes.
+                    </p>
+                </div>
             </div>
 
-            <div class="hidden-1">
+            <div class="hidden-1" id="div-logo-git-hub">
                 <img class="logo" id="logo-git-hub" src="./assets/logo-git-hub.png" alt="logo-git-hub">
+                <div class="hidden" id="text-logo">
+                    <h1 class="title-logo">GITHUB</h1>
+                    <p>É uma plataforma feita para hospedagem de códigos de programação.
+                        <br><br> Também é uma rede de compartilhamento e troca de conhecimento entre os profissionais desenvolvedores.
+                </div>
             </div>
         </div>
 
@@ -66,31 +104,27 @@
 
 
 
+
+
+
     <section id="section-2">
         <div class="hidden-1" id="line-top"></div>
         <div class="div-section-2">
             <div class="div-section-2-1">
                 <h1 class="hidden" id="title-quem-sou-eu">Pitter Bonoto</h1>
-                <p class="hidden" id="p-quem-sou-eu">"Sou um profissional comprometido, dinâmico, cooperativo e útil e
-                    sempre
-                    busquei
-                    agregar as equipes das
-                    quais fiz parte. Atualmente encontro-me em transição para uma carreira no setor de
-                    desenvolvimento e
-                    tecnologia.<br><br>Sou formado em Análise e Desenvolvimento de Sistemas e atualmente encontro-me
-                    aprimorando minhas habilidades como desenvolvedor por meio da formação DevClub. Tenho
-                    habilidades em
-                    HTML, CSS, JavaScript, Git, Github. Minha trajetória profissional é diversa, composta
-                    principalmente
-                    por
-                    atividades no segmento de Elétrica Industrial."</p>
+                <p class="hidden" id="p-quem-sou-eu">"Desenvolvedor Front-End, fascinado por criar interfaces e
+                    desenvolver aplicações. Formado em Análise e Desenvolvimento de Sistemas com habilidades em
+                    desenvolvimento, aprimoramento e manutenção de interfaces Web utilizando tecnologias como HTML, CSS,
+                    JavaScrip, Git, GitHub. Em expansão de conhecimentos em desenvolvimento Full-stack estudando
+                    tecnologias como Node.js e React por meio da formação Dev Club.<br><br>
+                    Sou comprometido, dinâmico, cooperativo e útil e busco agregar ao ambiente que faço parte.
+                    Atualmente encontro-me em transição de carreira para atuar como desenvolvedor."</p>
             </div>
 
             <img class="hidden" id="img-pitter" src="./assets/Pitter-profissional sem fundo.png" alt="foto-pitter">
         </div>
         <div class="hidden-1" id="line-bottom"></div>
     </section>
-
 
 
 
@@ -244,10 +278,25 @@
                         Acesse o site</a>
                 </div>
             </div>
+
+            <div class="hidden-1" id="project">
+                <img class="img-project" src="./assets/creme-de-acai.png" alt="açai-delivery-login">
+                <div class="text-project">
+                    <h1 class="title-project">Açai Delivery Login</h1>
+                    <div class="line-project"></div>
+                    <p class="p-project">Tela de login de um delivery de açaí.</p>
+                    <div class="tecnology-project">
+                        <img class="p-tecnology-project"
+                            src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></img>
+                        <img class="p-tecnology-project"
+                            src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"></img>
+                    </div>
+                    <a class="link-project" href="https://pitterbonoto.github.io/Acai-delivery-login/" target="_blank">
+                        Acesse o site</a>
+                </div>
+            </div>
         </div>
     </section>
-
-
 
 
 
