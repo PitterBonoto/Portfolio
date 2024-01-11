@@ -30,7 +30,7 @@ nav {
 
 nav:hover {
     margin-top: 0;
-    background-color: #000000AA;
+    background-color: #00000099;
     box-shadow: 2px 2px 40px #FFFFFF;
     transition: 1.4s ease;
 }
@@ -476,6 +476,7 @@ nav:hover>.nav-itens {
     justify-content: center;
     gap: 5px;
     margin: 10% 0;
+    width: 98%;
 }
 
 .p-tecnology-project {
@@ -628,12 +629,12 @@ textarea {
 
     nav:hover>.nav-itens {
         justify-content: center;
-        gap: 20px;
+        gap: 35px;
     }
 
     .link-nav {
         margin-right: 0;
-        font-size: 20px;
+        font-size: 17px;
     }
 
 
