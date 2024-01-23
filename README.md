@@ -16,7 +16,7 @@ O mesmo foi desenvolvido utilizando as tecnologia HTML, CSS e JavaScript</h6>
 <h5>O vídeo abaixo mostra o usuário navegando pela Landing Page</h5>
 <br>
 
-<img  src="" width=950px dis>
+<img  src="https://github.com/PitterBonoto/Portfolio/blob/main/assets/landing%20Page%20gif.gif?raw=true" width=950px dis>
 
 
 
