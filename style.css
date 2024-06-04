@@ -162,28 +162,37 @@ nav:hover>.nav-itens {
 }
 
 .div-logo {
+    margin-top: 15px;
     display: flex;
     gap: 1%;
 }
 
 .div-logo :nth-child(2) {
-    transition-delay: 200ms;
+    transition-delay: 150ms;
 }
 
 .div-logo :nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 300ms;
 }
 
 .div-logo :nth-child(4) {
-    transition-delay: 600ms;
+    transition-delay: 450ms;
 }
 
 .div-logo :nth-child(5) {
-    transition-delay: 800ms;
+    transition-delay: 600ms;
 }
 
 .div-logo :nth-child(6) {
-    transition-delay: 1000ms;
+    transition-delay: 750ms;
+}
+
+.div-logo :nth-child(7) {
+    transition-delay: 900ms;
+}
+
+.div-logo :nth-child(8) {
+    transition-delay: 1050ms;
 }
 
 .logo {
@@ -209,7 +218,6 @@ nav:hover>.nav-itens {
 }
 
 .title-logo {
-    text-align: center;
     font-size: 40px;
     color: #2793eb;
 }
@@ -221,32 +229,42 @@ nav:hover>.nav-itens {
 
 #div-logo-html:hover> #text-logo {
     display: flex;
-    left: 650px;
+    left: 750px;
 }
 
 #div-logo-css:hover> #text-logo {
     display: flex;
-    left: 562px;
+    left: 662px;
 }
 
 #div-logo-js:hover> #text-logo {
     display: flex;
-    left: 474px;
+    left: 574px;
+}
+
+#div-logo-react:hover> #text-logo {
+    display: flex;
+    left: 486px;
+}
+
+#div-logo-bootstrap:hover> #text-logo {
+    display: flex;
+    left: 398px;
 }
 
 #div-logo-node:hover> #text-logo {
     display: flex;
-    left: 386px;
+    left: 310px;
 }
 
 #div-logo-git:hover> #text-logo {
     display: flex;
-    left: 298px;
+    left: 222px;
 }
 
 #div-logo-git-hub:hover> #text-logo {
     display: flex;
-    left: 210px;
+    left: 134px;
 }
 
 #img-computer {
