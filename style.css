@@ -547,7 +547,7 @@ nav:hover>.nav-itens {
 
 #contact:hover {
     color: #2793eb;
-    text-shadow: 1px 1px 10px #2793eb;
+    font-size: 32px;
 }
 
 #contact:active {
